@@ -31,6 +31,9 @@ class Main
          */
         System.out.println("*** PRINTING ar1 *");
         int[] ar1 = new int[n];
+        
+        for (int i=0 ; i<n ; i++)
+            ar1[1]=1;
                 
         /*
          * Task 2.  Create a new array called ar2.
