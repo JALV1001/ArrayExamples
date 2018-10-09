@@ -32,13 +32,26 @@ class Main
         System.out.println("*** PRINTING ar1 *");
         int[] ar1 = new int[n];
         
+        
+        
         for (int i=0 ; i<n ; i++)
-            ar1[1]=1;
-                
+            ar1[i]=n-i;
+            
+        for (int i=0 ; i<n ; i++)
+                System.out.println("ar1["+ i +"] = "+ar1[i]); 
         /*
          * Task 2.  Create a new array called ar2.
          *          Copy the elements of ar1 into ar2.
          */
+        System.out.println("** ar2 **");
+        // This clones ar1
+        // int [] ar2 = ar1.clone()
+        int[] ar2 = new int[ar1.length];
+        for (int i=0 ; i<ar2.length ; i++)
+            ar2[i]=ar1[1];
+        for (int i=0 ; i<ar2.length ; i++)
+                System.out.println("ar2["+ i +"] = "+ar2[i]);
+        
         
         
         /* 
