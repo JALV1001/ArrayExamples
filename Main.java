@@ -339,8 +339,24 @@ class Main
          */
         System.out.println("*** task 13 ***");
         
-        
-        
+        String[] monsterArray={ "Cookie","Grover","Oscar the Grouch","Elmo","Rosita"}; 
+
+         for (int i=0 ; i<monsterArray.length; i++)
+         System.out.println(" [ "+i+"] "+monsterArray[i]);
+
+            for (int i=0 ; i<monsterArray.length; i++)
+            {
+                char c= monsterArray[i].toLowerCase().charAt(0);
+                if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+                System.out.println(monsterArray[i]); 
+            }
+         
+         
+         
+         
+         
+         
+         
         
         
         
@@ -367,7 +383,8 @@ class Main
           *         arindex[1]=5
           */
          
-         /*
+         /* 
+          * task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
           * fb[0]=1
