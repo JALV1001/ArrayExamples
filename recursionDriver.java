@@ -8,17 +8,32 @@ public class recursionDriver
      {
         return 0;
      }
-     return 10+elephants(n-1);
+     return 10+countNumbs(n-1);
  }
+ public static int count(int n)
+    {
+        // Base case AKA Stop Condition
+         if (n==0)
+             return 0; 
+
  
- 
- 
+         return 20+count(n-1); 
+    } 
  public static void main(String[] args)
  {
-  int counted=0;
-  counted = count(10);
+  System.out.println("***task 3***");
+     int counted=0;
+  counted = countNumbs(10);
   System.out.println(counted);
+  
+  System.out.println("***task 2***");
+  int counted=0; 
+     counted = count(12);
+     System.out.println(counted);
  }
+ 
+ 
+ 
 }
 
  /*
